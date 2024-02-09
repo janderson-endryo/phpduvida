@@ -87,8 +87,29 @@ foreach ($names['numeros'] as $key => $n) {
     echo $key." " . $n . "<br>";
 }
 
+// continue e break
 
-?>
+$break = ['janderson', 'alves', 'endryo'];
+
+for ($i = 0; $i < count($break); $i++) {
+
+    if ($i === 1) {
+        continue; // ele pula o indice 
+        // break; // para no indice se eu muda a posiçao do if ele vai mostra o indice nesse caso nao mostra 
+    }
+        echo $break[$i]. " ";
+    }
+
+    echo '<br>';
+
+    foreach ($break as $key => $a) {
+        if($key === 1) {
+            continue;
+        }
+        echo $a. " ";
+    }
+    
+    ?>
 
 </body>
 </html>
